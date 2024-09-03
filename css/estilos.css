@@ -855,6 +855,14 @@ footer hr {
         font-size: 1.8rem;
     }
 
+    .price {
+        border-radius: 100px;
+        margin-top: 0px;
+        height: 100%;
+        padding: 10px ;
+     
+       
+    }
     .price__container{
         border-radius: 60px;
         display: grid;
@@ -905,7 +913,14 @@ footer hr {
     }
 
     
-    
+    .price2 {
+        border-radius: 100px;
+        margin-top: 0px;
+        height: 100%;
+        padding: 10px ;
+     
+       
+    }
     .price2__en{
         margin-top: 80px;
         font-size:30px ;
@@ -928,8 +943,7 @@ footer hr {
             0 0 10px rgba(0, 0, 0, .8)
         );
         width: 50%;
-        display: block;
-    }
+        }
  
   
     
