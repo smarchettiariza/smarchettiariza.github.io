@@ -287,11 +287,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-.price__texts h2{
-    text-align: center;
-    line-height: 2.5;
-    color: rgb(238, 40, 139);
-}
 
 
 /* Ajustes responsivos para el dropdown */
