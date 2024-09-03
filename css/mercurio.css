@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0) ;
+
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background:#15171b;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #5454D4;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 1000px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    clip-path: (0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* Nav */
+
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title {
+    align-content: center;
+    font-weight: 300;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+}
+
+.nav__items {
+    position: relative; /* Asegura que el dropdown se posicione relativo a este contenedor */
+}
+
+.nav__items > a { /* Aplica la animación solo a los enlaces principales */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.nav__items > a::after { /* Solo a los enlaces principales */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav__items > a:hover::after { /* Solo a los enlaces principales */
+    width: 100%;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%; /* Ajusta según sea necesario */
+    left: 0; /* Ajusta según sea necesario */
+    min-width: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    border-radius: 20px;
+    border: solid rgba(255, 255, 255, 0.158);
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+
+    background-color: #27272775;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+/* Hero container */
+
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+.hero__paragraph {
+    margin-bottom: 20px;
+    color: #606060;
+}
+
+
+/* Knowledge */
+
+.knowledge {
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.knowledge__container{
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+}
+
+.knowledege__texts{
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+
+}
+.knowledge__img{
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+    width: 50%;
+    filter: drop-shadow(
+        0 0 10px rgb(0, 0, 0)
+    );
+}
+.all{
+    text-align: center;
+}
+
+.animacion-texto {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 3s forwards;
+}
+
+.knowledge2{
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    background-color: transparent;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.price {
+    margin-top: 0px;
+    height: 40%;
+    padding: 50px ;
+ 
+   
+}
+
+.price__container{
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+
+}
+
+.price__texts h2{
+    text-align: center;
+    line-height: 2.5;
+    color: rgb(75, 85, 82);
+}
+.price__texts .hh{
+    font-size: 40px;
+    text-align: center;
+}
+.price__texts p{
+    line-height: 1.7;
+
+}
+.info2{
+    text-align: center;
+}
+.info{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* Ajustes responsivos para el dropdown */
+@media screen and (max-width: 800px) {
+    .nav__link {
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: transparent;
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+    .dropdown-menu li a {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    .nav__items > a::after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+@media (max-width:800px){
+    .nav__menu{
+        display: block;
+    }
+
+    .nav__link--menu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .price__container .hh{
+        font-size: 25px;
+
+    }
+}
+
