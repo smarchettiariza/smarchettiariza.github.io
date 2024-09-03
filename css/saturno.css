@@ -251,21 +251,8 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.price {
-    margin-top: 0px;
-    height: 40%;
-    padding: 50px ;
- 
-   
-}
-
-.price__container{
-    border-radius: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-
-
+.price__textss{
+    margin-top: 21%;
 }
 
 .price__texts h2{

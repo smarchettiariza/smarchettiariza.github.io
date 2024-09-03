@@ -256,24 +256,11 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.price {
-    margin-top: 90%;
-    height: 40%;
-    padding: 50px ;
- 
-   
+
+.price__textss{
+    margin-top: 20%;
 }
 
-.price__container{
-    margin-top: 90%;
-
-    border-radius: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-
-
-}
 
 
 .price__texts .hh{
@@ -300,7 +287,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-
+.price__texts h2{
+    text-align: center;
+    line-height: 2.5;
+    color: rgb(238, 40, 139);
+}
 
 
 /* Ajustes responsivos para el dropdown */

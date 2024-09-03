@@ -75,7 +75,6 @@ body::-webkit-scrollbar-thumb:hover {
 .nav__title {
     align-content: center;
     font-weight: 300;
-    text-align: center;
 }
 
 .nav__link {
@@ -158,7 +157,6 @@ body::-webkit-scrollbar-thumb:hover {
     border: solid rgba(255, 255, 255, 0.158);
     color: #ffffff;
     padding: 10px 15px;
-    width: 120px;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease;
@@ -223,8 +221,7 @@ body::-webkit-scrollbar-thumb:hover {
     filter: drop-shadow(
         0 0 10px rgba(0, 0, 0, .8)
     );
-    width: 55%;
-    margin-top: -10px;
+    width: 40%;
     filter: drop-shadow(
         0 0 10px rgb(0, 0, 0)
     );
@@ -239,6 +236,13 @@ body::-webkit-scrollbar-thumb:hover {
     animation: aparecer 3s forwards;
 }
 
+.knowledge2{
+    border-radius: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    background-color: transparent;
+}
 
 
 @keyframes aparecer {
@@ -252,28 +256,13 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.price {
-    margin-top: 0px;
-    height: 40%;
-    padding: 50px ;
- 
-   
+
+
+.price__textss{
+    margin-top: 10%;
 }
 
-.price__container{
-    border-radius: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
 
-
-}
-
-.price__texts h2{
-    text-align: center;
-    line-height: 2.5;
-    color: rgb(84, 99, 187);
-}
 .price__texts .hh{
     font-size: 40px;
     text-align: center;
@@ -290,7 +279,16 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 30px;
 }
 
+.price__texts h2{
+    text-align: center;
+    line-height: 2.5;
+    color: rgb(46, 109, 121);
+}
+.price__texts{
+    text-align: center;
+    margin-top: 10%;
 
+} 
 
 
 
@@ -321,9 +319,6 @@ body::-webkit-scrollbar-thumb:hover {
         display: none;
     }
 }
-
-
-
 
 
 
