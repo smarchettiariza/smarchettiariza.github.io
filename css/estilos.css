@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/fondo.jpg');
+    background-image: url('/images/spcace.jpg');
     background-size: cover;
     clip-path: (0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
